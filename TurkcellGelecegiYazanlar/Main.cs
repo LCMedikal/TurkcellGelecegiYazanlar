@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace TurkcellGelecegiYazanlar
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            dosyaislemleri n = new dosyaislemleri();
+            n.Show();
         }
     }
 }
